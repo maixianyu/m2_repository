@@ -1,0 +1,9 @@
+bump scala version:
+  find . -type f -name "build.sbt" -exec sed -i "s:scalaVersion \:=.*\":scalaVersion\ \:=\ \"2.12.6\"":g {} ;
+  add `resolvers += Resolver.mavenLocal` to build.sbt
+
+firrtl
+treadle
+firrtl-interpreter
+chisel-tester
+rocket-chip
